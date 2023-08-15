@@ -1,0 +1,1 @@
+docker run --gpus all -p 8889:8888 -v /home/kai/jupyter/cuda11.2/workspace:/workspace -it jupyter-image:cuda11.2-cudnn8-py3.8

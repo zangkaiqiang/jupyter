@@ -1,0 +1,12 @@
+version: '2'
+services:
+  jupyter:
+    image: jupyter_image:torch2.0.0-cuda11.7-cudnn8
+    runtime: nvidia
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all  # 设置可见的GPU设备
+    ports:
+      - "8888:8888"
+    volumes:
+      -  /home/kai/jupyter/cuda11.7/workspace:/workspace
+
