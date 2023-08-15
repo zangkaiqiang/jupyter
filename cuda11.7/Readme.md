@@ -1,8 +1,8 @@
 # 
 ## 生成密码
-···
+```
 python -c "from notebook.auth import passwd; print(passwd(algorithm='sha1'))"
-···
+```
 将Dockerfile里的sha1密码使用生成的sha1密码替换，该密码为jupyterlab的登录密码
 
 ## build
